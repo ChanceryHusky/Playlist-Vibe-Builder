@@ -1,0 +1,60 @@
+
+
+
+# 🎵 Playlist Vibe Builder — Merge Sort 🎵 
+
+## Chosen Problem
+Given a playlist of songs with energy scores (0–100), 
+sort them from lowest to highest energy so the vibe 
+flows naturally. New songs can be added and the 
+playlist re-sorted at any time.
+
+## Chosen Algorithm
+**Merge Sort** was chosen because:
+- It is stable, meaning songs with equal energy scores 
+  keep their original order
+- It works efficiently even as the playlist grows
+- Its "split and merge" steps are easy to visualize 
+  clearly for the user
+
+## Demo
+*(Add a screenshot or GIF here after your app is built)*
+![Initial Screen](screenshots/initial.png)
+![First result Screen](screenshots/first.png)
+![Second result Screen](screenshots/second.png)
+![Third result Screen](screenshots/third.png)
+![Last result Screen](screenshots/last.png)
+
+## Problem Breakdown & Computational Thinking
+
+*(Add your flowchart image here)*
+///
+
+- **Decomposition:**
+  - Split the playlist in half repeatedly until each 
+    half has one song
+  - Compare songs from each half by energy score
+  - Merge them back together in sorted order
+
+- **Pattern Recognition:**
+  - Every merge step repeats the same action: compare 
+    two songs, pick the lower energy one first, move 
+    forward
+
+- **Abstraction:**
+  - Show: which songs are being compared, the current 
+    step number, and the final sorted playlist
+  - Hide: the recursion depth, index tracking, and 
+    internal list slicing
+
+- **Algorithm Design:**
+  - Input → User types song names and energy scores 
+    into the Gradio text box
+  - Process → Merge Sort runs and records each 
+    comparison step
+  - Output → Each step is displayed, followed by the 
+    final sorted playlist
+
+## Steps to Run
+
+1. Clone this repository:
