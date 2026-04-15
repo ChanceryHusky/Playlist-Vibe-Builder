@@ -57,6 +57,70 @@ playlist re-sorted at any time.
   - Output → Each step is displayed, followed by the 
     final sorted playlist
 
-## Steps to Run
+-**Testing & Edge Cases
 
-1. Clone this repository:
+1. Normal Case (default playlist)
+Test 1 -  Default playlist, sort by energy
+- Input: The preloaded playlist of 7 songs.
+- Expected: Songs should be sorted from lowest → highest energy.
+- Actual: The algorithm correctly divided, compared, and merged the playlist.
+- The final sorted list matched the expected ascending order.
+
+![Default energy screen](test1.png)
+![Default energy Screen](test1p2.png)
+
+
+Test 2 — Default playlist, sort by duration
+- Input: Same playlist, sort key changed to duration.
+- Expected: Songs should be sorted by duration (ascending).
+- Actual: Merge Sort produced the correct order.
+- The visualization updated at each divide/merge step.
+
+![Default duration Screen](test2.png)
+![Default duartion Screen](test2p2.png)
+
+2. User‑Edited Cases
+Test 3 — Added new songs
+- Input: Added two new songs with custom energy/duration values.
+- Expected: New songs should appear in the correct sorted position.
+- Actual: The algorithm handled the expanded playlist correctly.
+- No errors occurred, and the animation included the new items.
+
+![Add new songs Screen](test3.png)
+![Add new songs Screen](test3p2energy.png)
+![Add new songs Screen](test3p3energy.png)
+
+![Add new songs Screen](test3.png)
+![Add new songs Screen](test3duration.png)
+![Add new songs Screen](test3p2duration.png)
+
+3. Edge Cases
+- Test 4 — Duplicate values
+- Input: Modified playlist so two songs had the same energy value.
+- Expected: Merge Sort should handle duplicates without errors.
+- Actual: Sorting completed correctly.
+- Duplicate values appeared grouped together as expected.
+
+![Dupilcate Screen](test4dupenergy.png)
+![Dupilcate Screen](test4p2dupenergy.png)
+![Dupilcate Screen](test4p3dupenergy.png)
+
+Test 5 — Already sorted playlist
+- Input: Manually arranged playlist in ascending energy order.
+- Expected: Algorithm should still run and return the same order.
+- Actual: The visualization ran normally, and the final output matched the input.
+
+![Sorted Screen](test5manual.png)
+![Sorted Screen](test5p2manual.png)
+![Sorted Screen](test5p3manual.png)
+
+Test 6 — Reverse sorted playlist
+- Input: Playlist arranged from highest → lowest energy.
+- Expected: Merge Sort should reorder it into ascending order.
+- Actual: Sorting was correct, and the animation clearly showed the merge steps fixing the reversed order.
+
+
+![Reverse sorted Screen](test6reverse.png)
+![Reverse sorted Screen](test6p2reverse.png)
+![Reverse sorted Screen](test6p3reverse.png)
+![Reverse sorted](test6p4reverse.png)

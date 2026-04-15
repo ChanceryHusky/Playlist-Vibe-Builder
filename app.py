@@ -88,9 +88,10 @@ with gr.Blocks(title="Playlist Vibe Builder - Merge Sort", theme=gr.themes.Soft(
             playlist_input = gr.DataFrame(
                 value=pd.DataFrame({
                     "title": ["Just a boy-Japanse Rap", "Fire Burning-Sean Kingston", "Otonoke-Creepy Nuts", 
-                              "Zoo-Shakira", "I like to move it move it-Madagascar", "Nidone-Creepy Nuts", "Mamacita-Jason Derula"],
-                    "energy": [85, 70, 92, 95, 79, 88, 78],
-                    "duration": [315, 406, 310, 313, 356, 357, 426]
+                              "Zoo-Shakira", "I like to move it move it-Madagascar", "Nidone-Creepy Nuts", 
+                              "Mamacita-Jason Derula", "Love Not War-Jason Derula", "Iko Iko-Wellington"],
+                    "energy": [95, 92, 91, 88, 88, 85, 79, 78, 70],
+                    "duration": [315, 406, 310, 313, 356, 357, 426, 335, 321]
                 }),
                 label="✏️ Your Playlist (add/remove rows & edit values)",
                 interactive=True,
