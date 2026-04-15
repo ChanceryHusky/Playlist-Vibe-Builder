@@ -28,7 +28,9 @@ playlist re-sorted at any time.
 ## Problem Breakdown & Computational Thinking
 
 *(Add your flowchart image here)*
-///
+## Flowchart
+![Flowchart of Merge Sort](screenshots/flowchart.png)
+
 
 - **Decomposition:**
   - Split the playlist in half repeatedly until each 
